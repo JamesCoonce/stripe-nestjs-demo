@@ -16,7 +16,7 @@ export class CustomersService {
   }
 
   async createCustomer(customerInfo: Stripe.customers.ICustomerCreationOptions ): Promise<Stripe.customers.ICustomer> {
-    const customer = await this.stripe.customers.create({});
+    const customer = await this.stripe.customers.create(customerInfo);
     return customer;
   }
 
