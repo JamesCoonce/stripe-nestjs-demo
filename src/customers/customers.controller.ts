@@ -10,8 +10,6 @@ import {
   Patch,
   Delete,
 } from '@nestjs/common';
-import { ApiUseTags, ApiResponse } from '@nestjs/swagger';
-import Stripe from 'stripe';
 import { CustomersService } from './customers.service';
 import { CreateCustomerDto } from './dto/createCustomer.dto';
 
